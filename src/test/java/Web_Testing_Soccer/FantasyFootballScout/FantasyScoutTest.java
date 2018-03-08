@@ -14,7 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 
-public class AppTest {
+public class FantasyScoutTest {
 	  private WebDriver driver;
 	  private boolean acceptNextAlert = true;
 	  private StringBuffer verificationErrors = new StringBuffer();
@@ -42,7 +42,7 @@ public class AppTest {
 	    assertEquals("Team News | Fantasy Football Tips, News and Views from Fantasy Football Scout", driver.getTitle());
 	    assertEquals("Next Match:", driver.findElement(By.xpath("//article[@id='post-3147']/section/div/ol/li/div/header/div/strong")).getText());
 	    assertEquals("CHELSEA", driver.findElement(By.xpath("//html//li[5]/div[1]/header[1]/h2[1]")).getText());
-	    
+	   
 	  }
 
 	  @After
@@ -53,6 +53,15 @@ public class AppTest {
 	      fail(verificationErrorString);
 	    }
 	  }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
 	}
 
 
